@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --color-fondo: #200E3A;
+    --color-primario: #3887BE;
+    --color-secundario: #52D3D8;
+    --color-terciario: #495057;
+    --color-text-boton: #ffffff;
+    --color-boton-hover: #ff8c00;
+
+    --font-ubuntu: "Ubuntu Sans Mono", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    margin: auto;
+    width: auto;
+    height: 94.8148vh;
+    background: var(--color-fondo);
+    font-family: var(--font-ubuntu);
+}
+
+#logo{
+    width: 100%;
+    float: left;
+}
+
+#logo img{
+    margin: 3% 0 2% 6%;
+    float: inherit;
+    width: 10%;
+}
+
+#container1{
+    float: left;
+    width: 60%;
+    height: 80%;
+
+}
+
+#text-input{
+    float: left;
+    margin: 2% 0 0 10%;
+    padding: 0;
+    width: 80%;
+    height: 75%;
+    font-family: var(--font-ubuntu);
+    font-size: 1.875em;
+    color: var(--color-secundario);
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: var(--color-primario);
+}
+
+#advertencia{
+    float: left;
+    margin: 0 10%;
+    color: var(--color-text-boton);
+    opacity: 60%;
+
+}
+
+#signo_admiracion{  
+    display: inline;
+    vertical-align: middle;
+    width: 3%;
+}
+
+#text_admiracion{
+    display: inline;
+    font-size: 1em;
+}
+
+#botones{
+    float: left;
+    margin: 1% 8%;
+    width: 80%;
+    height: auto;
+}
+
+#button1{
+    margin: 0 2%;
+    width: 17em;
+    height: 3em;
+    border: 1px solid var(--color-secundario);
+    background: var(--color-primario);
+    border-style: none;
+    border-radius: 1.8519vh;
+    box-shadow: 0vh 0.9259vh 0.9259vh -0.7407vh rgba(0, 0, 0, 0.08);
+    font-size: 1.8519vh;
+    color: var(--color-text-boton);
+    cursor: pointer;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 700;
+}
+
+#button1:hover{
+    background: var(--color-boton-hover);
+    transform: scale(1.02);
+}
+
+#button2{
+    margin: 0 1%;
+    width: 17em;
+    height: 3em;
+    background: var(--color-terciario);
+    border-style: none;
+    border-radius: 1.8519vh;
+    box-shadow: 0vh 0.9259vh 0.9259vh -0.7407vh rgba(0, 0, 0, 0.08);
+    font-size: 1.8519vh;
+    color: var(--color-text-boton);
+    cursor: pointer;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 700;
+}
+
+#button2:hover{
+    background: var(--color-boton-hover);
+    transform: scale(1.02);
+}
+
+#box-white{
+    float: right;
+    margin: -10.3% 5% 0 0;
+    width: 25%;
+    height: 95%;
+    background: var(--color-primario);    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    text-align: center;
+}
+
+#dibujo{
+    margin: 30% auto;
+    width: 70%;
+    height: auto;
+}
+
+#text-box1{
+
+    width: 90%;
+    height: auto;
+    font-weight: bolder;
+    font-size: 1.8em;
+    line-height: 120%;
+    text-align: center;    
+    color: var(--color-text-boton);
+}
+
+#text2-box1{
+    font-family: var(--font-ubuntu);
+    width: 80%;
+    height: auto;
+    margin: 3% auto;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 120%;
+    color: var(--color-text-boton);
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#button-copy{
+    width: 80%;
+    height: 3em;
+    margin: 10% auto;
+    background: var(--color-text-boton);
+    border: 2px solid var(--color-fondo);
+    font-family: var(--font-ubuntu);
+    font-weight: 700;
+    border-radius: 0.9em;
+    font-size: 1.25em;
+    color: var(--color-fondo);
+    display: none;
+    cursor: pointer;
+}
+
+#button-copy:hover{
+    background: var(--color-boton-hover);
+    transform: scale(1.02);
+    color: #ffffff;
+}
+
+
+
+/*RESPONSIVE TABLET*/
+
+
+@media screen and (max-width:768px){
+    main{
+        display: block;
+        width: auto;
+    }
+
+    #logo img{
+        margin: 10% auto 0 10%;
+        width: 2.5%;
+    }
+
+    #container1{
+        width: 100%;
+        height: 50%;
+    }
+
+    .text-input{
+        margin-left: 20%;
+        width: 100%;
+    }
+
+    #advertencia{
+        width: 100%;
+        margin: 0 10%;
+    }
+
+    #botones{
+        margin: 1% 9%;
+        width: 80%;
+        height: auto;
+    }
+
+    #button1{
+        margin: 0 1%;
+        width: 40%
+    }
+
+    #button2{
+        margin: 0 1%;
+        width: 40%;
+    }
+
+    #box-white{
+        float: none;
+        display: inline-block;
+        width:90%;
+        height: 30%;
+        margin: 5% 5% 0 5%;
+        align-content: center;
+    }
+
+    #dibujo{
+        display: none;
+    }
+
+    #text-box1{
+        width: 90%;
+        text-align: center;
+        margin: 10% 0 0 5%;
+    }
+    
+    #text2-box1{
+        text-align: center;
+        height: auto;
+    }
+
+    #button-copy{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    main{
+        display: block;
+        width: auto;
+    }
+
+}

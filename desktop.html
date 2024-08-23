@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="desktop_style.css">
+      <script type="text/javascript" src="encript.js"></script>
+      <title>Encriptador</title>
+  </head>
+  <body>
+    <main id="container">
+
+      <div id="logo">
+        <img src="img/logo_vector.svg" alt="Logo Joe López">
+      </div>
+
+      <form id="container1" >
+          <textarea name="Ingrese el texto aqui" id="text-input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+          <div id="advertencia">
+            <img id="signo_admiracion" src="img/vector.svg" alt="signo_admiracion">
+            <p id="text_admiracion">Solo letras minúsculas y sin acentos</p>
+          </div>
+          
+          <div id="botones">
+            <button id="button1" type="button" onclick="encriptar()">Encriptar</button>
+            <button id="button2" type="button" onclick="desencriptar()">Desencriptar</button>
+          </div>
+
+      </form>
+
+      <div id="box-white">
+          <img id="dibujo" src="img/asset1.svg" alt="Dibujo no encontrado">                    
+          <p id="text-box1">Ningún mensaje fue encontrado</p>
+          <textarea id="text2-box1" name="Ingresa el texto que desees encriptar o desencriptar" id="text2-box1" cols="30" rows="10">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+          <button id="button-copy" type="button" onclick="copiar()">Copiar</button>
+      </div>
+
+    </main>
+  </body>
+</html>
